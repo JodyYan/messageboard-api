@@ -16,4 +16,9 @@ class MessageController extends Controller
     {
         return Message::all();
     }
+
+    public function show($id)
+    {
+        return Message::findOrFail($id);
+    }
 }
