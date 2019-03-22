@@ -21,4 +21,10 @@ class MessageController extends Controller
     {
         return Message::findOrFail($id);
     }
+
+    public function update(Message $id)
+    {
+         $id->update(request()->all());
+          return $id;
+    }
 }
