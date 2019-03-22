@@ -21,3 +21,4 @@ Route::post('/message', 'MessageController@store');
 Route::get('/message', 'MessageController@index');
 Route::get('/message/{id}', 'MessageController@show');
 Route::patch('/message/{id}', 'MessageController@update');
+Route::delete('/message/{id}', 'MessageController@destroy');

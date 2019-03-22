@@ -27,4 +27,10 @@ class MessageController extends Controller
          $id->update(request()->all());
           return $id;
     }
+
+    public function destroy(Message $id)
+    {
+        $id->delete();
+        return 'ok';
+    }
 }
