@@ -11,4 +11,9 @@ class MessageController extends Controller
     {
         return Message::create(request()->all());
     } 
+
+    public function index()
+    {
+        return Message::all();
+    }
 }

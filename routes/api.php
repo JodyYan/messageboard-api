@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/message', 'MessageController@store');
+Route::get('/message', 'MessageController@index');
